@@ -1,6 +1,6 @@
 /*
  * file: 1-last_digit.c
- * AUTH: giFTonYE
+ * Auth: giFTonYE
  */
 
 #include <stdlib.h>
