@@ -1,15 +1,16 @@
 /*
- * FILE: 2-print_alphabet.c
- * AUTH: giFTonYE
+ * File: 2-print_alphabet.c
+ * Auth: giFTonYE
  */
 
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet in lower.
+ * main - Prints the alphabet in lowercase.
  *
  * Return: Always 0.
- */int main(void)
+ */
+int main(void)
 {
 	char letter;
 
@@ -17,7 +18,7 @@
 	for (letter = 'a'; letter <= 'z'; letter++)
 		putchar(letter);
 
-	putchar('n\');
+	putchar('\n');
 
 	return (0);
 }
