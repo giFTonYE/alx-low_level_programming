@@ -1,4 +1,4 @@
-#include <putchar.h>
+#include "putchar.h"
 /**
  * main - print _putchar
  * 
@@ -6,15 +6,17 @@
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char *sh = "putchar";
+
+	while (*sh)
+	
+	{
+		_putchar(*sh);
+		sh++;
+	}
 	_putchar('\n');
-	return (0);
+
+	return(0);
 }
+
  
