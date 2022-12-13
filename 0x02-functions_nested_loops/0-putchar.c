@@ -1,22 +1,19 @@
-#include "putchar.h"
+#include "putchar.c"
+#include "main.h"
 /**
- * main - print _putchar
- * 
- * Return: 0 (success)
+ * main -prints _putchar
+ * Return: 0
  */
 int main(void)
 {
-	char *sh = "putchar";
-
-	while (*sh)
-	
-	{
-		_putchar(*sh);
-		sh++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('T');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
-
-	return(0);
+	return (0);
 }
-
- 
