@@ -5,7 +5,7 @@
  * @a: paramete 1
  * @b: parameter 2
  */
-void swap_int(int 8a, int *b)
+void swap_int(int *a, int *b)
 {
 	int tmp;
 
