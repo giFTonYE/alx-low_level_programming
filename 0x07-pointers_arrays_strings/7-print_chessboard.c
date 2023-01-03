@@ -2,7 +2,7 @@
 
 /**
  * print_chessboard - print a chessboard
- *
+ * Descritption: printing a chessboard
  * @a: pointer to matrix containing the chessboard
  *
  * Return: nothing
