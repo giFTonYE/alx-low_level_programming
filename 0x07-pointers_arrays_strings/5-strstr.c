@@ -1,28 +1,48 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * _strstr -Entry point
- * @haystack: input
- * @needle: input
- * Return: Always 0 (success)
+ *_strstr - locates a substring within a string
+ *
+ *@haystack: pointer that contains the address of the string to be evaluated
+ *@needle: pointer that contains the string to evaluate @haystack
+ *
+ *Return: address of the located string in @haystack if no substring is found
+ *then retun NULL
  */
-char *_strstr(char *haystack,  char *needle)
+char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	int i = 0;
+	int j = 0;
+	int a;
+	int compare = 0;
+
+	if (*needle == 0)
 	{
-		char *one = haystack;
-		char *two = needle;
-
-		while (*one == 8two && *two != '\0')
-		{
-			one++;
-			two++
-		}
-
-		if (*two == '\0')
-			return (haystack);
+		return (haystack);
 	}
-
-	return (NULL);
+	while (haystack[i] != 0)
+	{
+		j = 0;
+		a = i;
+		while (needle[j]  != 0)
+		{
+			if (needle[j] == haystack[a])
+			{
+				compare = 1;
+			}
+			else
+			{
+				compare = 0;
+				break;
+			}
+			j++;
+			a++;
+		}
+		if (compare == 1)
+		{
+			return (haystack + i);
+		}
+		i++;
+	}
+	return (0);
 }
