@@ -8,15 +8,10 @@
  */
 
 int is_palindrome(char *s);
-{
-a = pip
-b = peep
-c = dip
 
 	{
-	printf("%d", a);
-	printf("%d", b);
-	printf("%d", c);
+	printf("peep");
+	printf("deed");
+	printf("beef");
 	}
 	return(1);
-}
