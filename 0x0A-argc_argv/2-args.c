@@ -1,4 +1,4 @@
-#include  <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,6 +7,7 @@
  * @argv: Array name
  * REturn: 0
  */
+
 int main(int argc, char *argv[])
 {
 	int  i;
