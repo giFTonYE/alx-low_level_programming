@@ -8,8 +8,8 @@ list_t *new_node(const char *str);
  * @head: pointer to pointer of a list_t
  * @str: string to copy into a node.
  *
- *     * Return: pointer to a list_t
- *       */
+ * Return: pointer to a list_t
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
