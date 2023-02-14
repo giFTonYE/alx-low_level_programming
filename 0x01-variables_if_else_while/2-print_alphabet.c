@@ -1,20 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <ctype.h>
+
 /**
- *  main - main block
- *  Description: Got a random it with 5
- *   Return: 0
+ * main - program that prints the alphabet in lowercase, followed by a new line
+ * You can only use the putchar
+ * Return: 0
  */
+
 int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'a')
+	int l = 'a';
+	while (l <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar(l);
+		l += 1;
 	}
-
 	putchar('\n');
 	return (0);
 }
