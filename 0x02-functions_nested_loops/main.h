@@ -20,6 +20,6 @@ void times_table(void);
 
 int add(int, int);
 
-void print_to_98(int n);
+void prints_to_98(int n);
 
-void print_time_table(int n);
+void prints_time_table(int n);
