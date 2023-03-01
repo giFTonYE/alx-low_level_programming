@@ -1,30 +1,46 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
- * *_calloc - function to allocates memory
- * @nmemb: unsigned int type
- * @size: unsigned int type
- * Return: return pointer to array
+ * *malloc_checked - program startup
+ * @s1: first char being evaluated
+ * @s2: second char being evalutated
+ * n: int being evaluated
+(*
+ * Description: concatenates two strings)?
+ * Return: return (0) is the required function signature
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	char *ptr;
-	unsigned int count;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
+#include "main.h"
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *concat;
+	unsigned int length = n;
+	unsigned int string;
+
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
-	count = 0;
-	while (count < nmemb * size)
+	if (s2 == NULL)
 	{
-		ptr[count] = 0;
-		count++;
+		s2 = "";
 	}
-	return (ptr);
+	for (string = 0; s1[string]; string++)
+	{
+		length++;
+	}
+	concat = malloc(sizeof(char) * (length + 1));
+	if (concat == NULL)
+	{
+		return NULL;
+	}
+	length = 0;
+	for (string = 0; s1[string]; string++)
+	{
+		concat[length++] = s1[string];
+	}
+	for (string = 0; s2[string] && string < n; string++)
+	{
+		concat[length++] = s2[string];
+	}
+	concat[length] = '\0';
+	return (concat);
 }

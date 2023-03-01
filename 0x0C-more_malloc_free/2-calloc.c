@@ -1,30 +1,32 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
- * *_calloc - function to allocates memory
- * @nmemb: unsigned int type
- * @size: unsigned int type
- * Return: return pointer to array
+ * *_calloc - program startup
+ * @nmemb: first int being evaluated
+ * @size: second int being evaluated
+(*
+ * Description: allocates memory for an array using malloc)?
+ * Return: return (0) is the required function signature
  */
+
+#include "main.h"
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr;
-	unsigned int count;
+	void *allocmem;
+	char *container;
+	unsigned int string;
 
 	if (nmemb == 0 || size == 0)
-		return (NULL);
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	count = 0;
-	while (count < nmemb * size)
+	allocmem = malloc(size * nmemb);
+	if (allocmem == NULL)
 	{
-		ptr[count] = 0;
-		count++;
+		return (NULL);
 	}
-	return (ptr);
+	container = allocmem;
+	for (string = 0; string < (size * nmemb); string++)
+	{
+		container[string] = '\0';
+	}
+	return (allocmem);
 }
